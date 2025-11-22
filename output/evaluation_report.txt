@@ -1,0 +1,52 @@
+══════════════════════════════════════════════════
+  PDC - Evaluation Report
+══════════════════════════════════════════════════
+
+SUPERVISED EVALUATION (Ground Truth Available)
+--------------------------------------------------
+
+Ground-truth IPs:
+  • Attack IPs: 47
+  • Benign IPs: 2
+
+Detected IPs: 10
+
+Supervised Metrics:
+  • TP: 8
+  • FP: 2
+  • FN: 0
+  • TN: 39
+  • Precision: 0.800
+  • Recall: 1.000
+  • F1-Score: 0.889
+  • FPR: 0.04878048780487805
+
+Accuracy Metrics:
+------------------------------
+  • Precision: 0.800
+  • Recall:    1.000
+  • F1 Score:  0.889
+  • FPR:       0.04878048780487805
+
+Blocking Effectiveness:
+------------------------------
+  • Total attack packets: 2
+  • Blocked attack packets: 2
+  • Blocking percentage: 100.00%
+  • Attack traffic dropped (pct): 100.0
+  • Collateral impact (pct): 17.02127659574468
+
+Processing Summary:
+------------------------------
+  • processed_flows = 2181542
+  • detected_entropy = 3
+  • detected_cusum = 9
+  • detected_pca = 0
+  • combined_malicious_count = 10
+
+Resource Utilization:
+------------------------------
+  • CPU Usage: 5.1%
+  • GPU Usage: N/A
+  • Memory: 1019.4MB / 1964.5MB (51.89%)
+  • Network I/O rate (Mbps): 0.0

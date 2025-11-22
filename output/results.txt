@@ -1,0 +1,5 @@
+processed_flows=2181542
+detected_entropy=3
+detected_cusum=9
+detected_pca=0
+combined_malicious_count=10

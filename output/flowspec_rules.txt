@@ -1,0 +1,30 @@
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 172.16.0.5; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 192.168.50.1; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 192.168.50.6; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 192.168.50.253; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 192.168.50.8; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 52.35.236.192; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 23.194.142.213; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 172.217.11.34; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 35.166.184.180; proto ANY } ; reason="detected-by-ensemble"
+
+# 2025-11-18 09:08:22
+flow-spec: action deny { src 209.85.232.108; proto ANY } ; reason="detected-by-ensemble"
+

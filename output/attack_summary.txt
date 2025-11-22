@@ -1,0 +1,8 @@
+malicious_ip_count=10
+total_ips=49
+malicious_ip_pct=20.408163
+malicious_packets=9869375
+total_packets=9871092
+malicious_packets_pct=99.982606
+ddos_threshold_pct=1.000000
+ddos_detected=1

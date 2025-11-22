@@ -1,0 +1,8 @@
+timestamp=1763474903
+input_file=data/Portmap.csv
+cpu_percent=5.08
+mem_used_mb=1019.37
+mem_total_mb=1964.52
+mem_percent=51.89
+net_rate_mbps=0.0000
+gpu_percent=N/A

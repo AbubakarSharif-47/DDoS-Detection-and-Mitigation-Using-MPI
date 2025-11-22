@@ -1,0 +1,33 @@
+metric,value
+TP,8
+FP,2
+FN,0
+TN,39
+precision,0.8
+recall,1.0
+f1,0.888888888888889
+fpr,0.04878048780487805
+TPR,1.0
+FPR,0.04878048780487805
+total_attack_ips,2
+total_benign_ips,47
+is_unsupervised,False
+total_attack_pkts,2
+blocked_attack_pkts,2
+blocking_percentage,100.0
+processed_flows,2181542
+detected_entropy,3
+detected_cusum,9
+detected_pca,0
+combined_malicious_count,10
+cpu_percent,5.08
+gpu_percent,N/A
+mem_used_mb,1019.37
+mem_total_mb,1964.52
+mem_percent,51.89
+net_rate_mbps,0.0
+attack_dropped_pct,100.0
+collateral_pct,17.02127659574468
+Detection Lead Time,4.0
+Window Delay,4
+Processing Delay,0.0
