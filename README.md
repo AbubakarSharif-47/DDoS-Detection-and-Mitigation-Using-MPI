@@ -28,15 +28,15 @@ It is optimized for **multi-core and multi-node distributed environments**, allo
 🏷️ Support for labeled datasets (BENIGN/Malicious)
 
 # Technologies Used
-##C + MPI (OpenMPI)
+ C + MPI (OpenMPI)
 
-##Python (NumPy, pandas, matplotlib)
+Python (NumPy, pandas, matplotlib)
 
 Bash scripting
 
 Linux-based environment
 
-📥 Installation
+# 📥 Installation
 1. Install system dependencies
 Bash
 
@@ -45,20 +45,17 @@ sudo apt install openmpi-bin libopenmpi-dev python3 python3-pip build-essential
 Bash
 
 pip install pandas numpy matplotlib psutil GPUtil
-⚙️ Building the MPI Program
-From inside mpiwork/:
-
+# ⚙️ Building the MPI Program
 Bash
-
-cd mpiwork
+cd main directory
 make
 This builds the executable: ./pdc
 
-▶️ Running the System
+# ▶️ Running the System
 Basic run
 Bash
 
-mpirun -np 4 ./pdc data/Portmap_offline_first100.csv
+mpirun -np 4 ./pdc data/DdosCSV.csv
 Automated full pipeline
 Bash
 
@@ -66,21 +63,8 @@ Bash
 Local test (single process)
 Bash
 
-./scripts/run_local.sh data/Portmap.csv
-🧽 CSV Normalization
-The system expects standardized flow columns:
 
-Plaintext
-
-timestamp, src_ip, src_port, dst_ip, dst_port, protocol, duration, packets, label
-Normalize any dataset using:
-
-Bash
-
-python3 scripts/to_flows.py input.csv
-Output: data/<filename>_offline.csv
-
-📤 Output Files
+# 📤 Output Files
 All results are stored in the output/ folder:
 
 File	Description
@@ -95,12 +79,12 @@ attack_summary.txt	Final summary of detected attacks
 
 Export to Sheets
 
-📊 Python Evaluation & Plotting
+# 📊 Python Evaluation & Plotting
 Compute evaluation metrics:
 
 Bash
 
-python3 python/evaluate.py data/Portmap_offline.csv
+python3 python/evaluate.py data/DdosCSV.csv
 Generate plots:
 
 Bash
@@ -108,7 +92,7 @@ Bash
 python3 python/plot_metrics.py output/evaluation_metrics.csv
 This generates accuracy, F1-score, ROC-style visualizations, etc.
 
-🔧 Configuration & Detector Tuning
+# 🔧 Configuration & Detector Tuning
 Adjust detector sensitivity using environment variables:
 
 Variable	Effect
@@ -127,7 +111,7 @@ export CUSUM_DIFF_THRESHOLD=4.5
 export ENTROPY_MIN_PKTS=20
 
 mpirun -np 8 ./pdc data/Normalized.csv
-⚡ Performance & Scalability
+# ⚡ Performance & Scalability
 Included utilities:
 
 scalability_run.sh: Test MPI scaling across multiple process counts
@@ -138,7 +122,7 @@ gpu_profile.sh: Optional GPU profiling
 
 MPI significantly improves performance on large datasets.
 
-🐞 Troubleshooting
+# 🐞 Troubleshooting
 Issue	Fix
 mpicc: command not found	Install OpenMPI: sudo apt install libopenmpi-dev
 Missing CSV columns	Run normalization: scripts/to_flows.py
@@ -147,5 +131,5 @@ MPI hangs	Check file paths, dataset, or number of processes
 
 Export to Sheets
 
-🤝 Contributing
-Pull requests are welcome. You can extend detectors, add ML-based detection models, or improve scripts.
+# 🤝 Contributers
+Abubakar Sharif, Husssain Khaqan, Umar Zeb
